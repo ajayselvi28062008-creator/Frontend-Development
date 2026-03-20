@@ -18,3 +18,6 @@ Demo code for Simple Web Page (Landing):http://127.0.0.1:5500/land.html
 
 Demo code for Navigation Bar with Dropdown:http://127.0.0.1:5500/navigation.html
 <img width="1920" height="878" alt="Screenshot (195)" src="https://github.com/user-attachments/assets/9c37fd23-97d8-410c-88a2-9a98e378d363" />
+
+Demo code for Implement Hover Effects and Transitions using CSS:http://127.0.0.1:5500/hov.html
+<img width="1920" height="912" alt="Screenshot (213)" src="https://github.com/user-attachments/assets/6527bf69-da03-47a3-bb76-e17b397611c1" />
