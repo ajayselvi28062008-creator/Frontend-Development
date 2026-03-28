@@ -29,6 +29,8 @@ Demo code for Validation Form using JavScript:http://127.0.0.1:5500/validation%2
 <img width="1890" height="918" alt="Screenshot (228)" src="https://github.com/user-attachments/assets/fa2943ff-b817-4257-a5de-3679b18ec61d" />
 <img width="1889" height="872" alt="Screenshot (229)" src="https://github.com/user-attachments/assets/e40632b5-9fe4-4bbd-8958-180e0e59ef44" />
 
+Demo code for Simple JavaScript Calculator:http://127.0.0.1:5500/calc.html
+<img width="1888" height="915" alt="Screenshot (240)" src="https://github.com/user-attachments/assets/b7ea3b8b-1e87-40a3-b4ff-eb3338493a57" />
 
 
 
