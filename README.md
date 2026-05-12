@@ -38,3 +38,15 @@ Demo code for Digital Clock using JavaScript:http://127.0.0.1:5500/clock.html
 Demo code for To-Do List using JavaScript:http://127.0.0.1:5500/list.html
 <img width="1895" height="911" alt="Screenshot (253)" src="https://github.com/user-attachments/assets/ceda137a-3e9a-4320-b67b-3fa097cccddd" />
 
+Demo code for Event Handling in HTML:http://127.0.0.1:5500/event%20hand.html
+When Click Here button is clicked:
+<img width="1920" height="908" alt="Screenshot (287)" src="https://github.com/user-attachments/assets/d82ce275-2bcd-4990-a4f0-6347b382e5bc" />
+When Double Click button is clicked:
+<img width="1920" height="908" alt="Screenshot (288)" src="https://github.com/user-attachments/assets/a9884a6d-2147-42ec-a6db-e447a3b04eab" />
+When the mouse is inside the box:
+<img width="1920" height="908" alt="Screenshot (290)" src="https://github.com/user-attachments/assets/af53066c-0292-48d5-afaf-234969640fb6" />
+When you are typing:
+<img width="1920" height="916" alt="Screenshot (291)" src="https://github.com/user-attachments/assets/b7e40d37-f4be-4e77-aa81-10a45503a4ff" />
+When you select course option:
+<img width="1920" height="906" alt="Screenshot (292)" src="https://github.com/user-attachments/assets/b664836b-19e6-45e3-b797-9f491b86e40d" />
+
