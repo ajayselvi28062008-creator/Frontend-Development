@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling</title>
+
+    <style>
+        body{
+            text-align:center;
+            background:lavender;
+            font-family:Arial;
+            margin-top:50px;
+        }
+
+        h1{
+            color:darkblue;
+        }
+
+        button,input,select{
+            padding:10px;
+            margin:8px;
+            border-radius:5px;
+        }
+
+        #box{
+            width:200px;
+            height:80px;
+            background:skyblue;
+            line-height:80px;
+            margin:auto;
+            font-size:20px;
+            border-radius:10px;
+        }
+
+        #msg{
+            color:red;
+            font-size:22px;
+        }
+    </style>
+
+    <script>
+        function clickEvent(){
+            document.getElementById("msg").innerHTML ="Welcome User!";
+        }
+
+        function doubleEvent(){
+            document.getElementById("msg").innerHTML ="Button Double Clicked";
+        }
+
+        function overEvent(){
+            document.getElementById("box").innerHTML ="Mouse Inside";
+        }
+
+        function outEvent(){
+            document.getElementById("box").innerHTML ="Mouse Outside";
+        }
+
+        function keyEvent(){
+            document.getElementById("msg").innerHTML ="You are Typing...";
+        }
+
+        function changeEvent(){
+            document.getElementById("msg").innerHTML ="Course Selected!";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>HTML Event Handling</h1>
+
+    <button onclick="clickEvent()">Click Here</button>
+
+    <button ondblclick="doubleEvent()">Double Click</button>
+
+    <br><br>
+
+    <div id="box"
+         onmouseover="overEvent()"
+         onmouseout="outEvent()">
+         Move Mouse Here
+    </div>
+
+    <br>
+
+    <input type="text"
+           placeholder="Enter Name"
+           onkeyup="keyEvent()">
+
+    <select onchange="changeEvent()">
+        <option>Select Course</option>
+        <option>BCA</option>
+        <option>BBA</option>
+        <option>BCom</option>
+    </select>
+
+    <p id="msg"></p>
+
+</body>
+</html>
