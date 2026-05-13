@@ -50,3 +50,12 @@ When you are typing:
 When you select course option:
 <img width="1920" height="906" alt="Screenshot (292)" src="https://github.com/user-attachments/assets/b664836b-19e6-45e3-b797-9f491b86e40d" />
 
+Demo code for Image Slider in HTML:http://127.0.0.1:5500/img%20slider.html
+First Image:
+<img width="1920" height="906" alt="Screenshot (303)" src="https://github.com/user-attachments/assets/f4d2b475-6af0-4187-89e0-d3c348bd0e35" />
+When next button is clicked:
+<img width="1920" height="903" alt="Screenshot (304)" src="https://github.com/user-attachments/assets/5d696aa4-236f-46d5-8c69-b9bc0ac193fa" />
+When previous button is clicked:
+<img width="1920" height="901" alt="Screenshot (305)" src="https://github.com/user-attachments/assets/71000e73-5293-4329-b767-038019aef7c7" />
+
+
