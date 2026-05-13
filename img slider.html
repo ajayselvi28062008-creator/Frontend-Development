@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slider</title>
+    <style>
+        body{
+            text-align:center;
+            font-family:'Times New Roman';
+            background-color:lightcoral;
+        }
+
+        h1{
+            color:black;
+        }
+
+        img{
+            width:300px;
+            height:200px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        button{
+            padding:10px 12px;
+            margin:10px;
+            background:red;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:purple;
+        }
+    </style>
+    <script>
+        let i=0;
+        let images=[
+            "image1.jfif",
+            "image2.jfif",
+            "image3.jfif",
+        ];
+
+        function show(){
+            document.getElementById("slide").src=images[i];
+        }
+
+        function next(){
+            i=(i+1)%images.length;
+            show();
+        }
+
+        function prev(){
+            i=(i-1+images.length)%images.length;
+            show();
+        }
+    </script>
+</head>
+<body onload="show()">
+    <h1>Image Slider</h1>
+    <img id="slide">
+    <br>
+    <button onclick="prev()">Previous</button>
+    <button onclick="next()">Next</button>
+</body>
+</html>
