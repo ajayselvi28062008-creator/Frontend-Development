@@ -59,5 +59,6 @@ When previous button is clicked:
 <img width="1920" height="901" alt="Screenshot (305)" src="https://github.com/user-attachments/assets/71000e73-5293-4329-b767-038019aef7c7" />
 
 Demo code for Webpage using HTML and CSS:http://127.0.0.1:5500/wbpage.html
-<img width="1892" height="922" alt="Screenshot (323)" src="https://github.com/user-attachments/assets/01980947-9728-407e-b98c-97f2acf35526" />
+<img width="1898" height="918" alt="Screenshot (320)" src="https://github.com/user-attachments/assets/274cb6b1-3fed-44c3-9aac-40b48ff9d703" />
+
 
