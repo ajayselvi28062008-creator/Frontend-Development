@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Modern Webpage</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Times New Roman';
+        }
+
+        body{
+            background:linear-gradient(to right, black, darkred);
+            min-height:100vh;
+        }
+
+        .navbar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 40px;
+            background:white;
+            box-shadow:0px 2px 10px gray;
+        }
+
+        .logo{
+            font-size:28px;
+            color:darkblue;
+        }
+
+        .menu{
+            display:flex;
+            gap:25px;
+        }
+
+        .menu a{
+            text-decoration:none;
+            color:black;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        .main{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            padding:60px;
+            gap:40px;
+        }
+
+        .content{
+            color:white;
+            width:50%;
+        }
+
+        .content h1{
+            font-size:45px;
+            margin-bottom:20px;
+        }
+
+        .content p{
+            font-size:18px;
+            line-height:30px;
+        }
+
+        .btn{
+            margin-top:25px;
+            padding:12px 30px;
+            border:none;
+            background:white;
+            color:darkblue;
+            font-size:17px;
+            border-radius:25px;
+            cursor:pointer;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:20px;
+            width:320px;
+            text-align:center;
+            box-shadow:0px 0px 15px black;
+        }
+
+        .card img{
+            width:100%;
+            border-radius:15px;
+        }
+
+        .card h2{
+            margin-top:15px;
+            color:darkred;
+        }
+
+        @media(max-width:768px){
+
+            .navbar{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .menu{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .main{
+                flex-direction:column;
+                text-align:center;
+                padding:30px;
+            }
+
+            .content{
+                width:100%;
+            }
+
+            .content h1{
+                font-size:32px;
+            }
+
+            .card{
+                width:100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">My Website</div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="content">
+            <h1>Creative Responsive Design</h1>
+
+            <p>
+                This webpage automatically changes its layout
+                for laptop and mobile screens using responsive design.
+            </p>
+
+            <button class="btn">Get Started</button>
+        </div>
+
+        <div class="card">
+            <img src="spiderman img.jfif">
+        </div>
+
+    </div>
+
+</body>
+</html>
