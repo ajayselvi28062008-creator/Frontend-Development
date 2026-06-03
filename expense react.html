@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:linear-gradient(135deg,#1e3c72,#2a5298);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .container{
+            width:400px;
+            background:white;
+            padding:25px;
+            border-radius:20px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align:center;
+            color:#333;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            margin:8px 0;
+            border:1px solid #ccc;
+            border-radius:10px;
+            box-sizing:border-box;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            border:none;
+            background:#667eea;
+            color:white;
+            font-size:16px;
+            border-radius:10px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#5563d6;
+        }
+
+        .summary{
+            text-align:center;
+            margin:20px 0;
+        }
+
+        .balance{
+            font-size:28px;
+            font-weight:bold;
+            color:#28a745;
+        }
+
+        ul{
+            list-style:none;
+            padding:0;
+        }
+
+        li{
+            background:#f4f4f4;
+            margin:8px 0;
+            padding:12px;
+            border-radius:10px;
+            display:flex;
+            justify-content:space-between;
+        }
+    </style>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script type="text/babel">
+
+function ExpenseTracker(){
+
+    const [title,setTitle] = React.useState("");
+    const [amount,setAmount] = React.useState("");
+    const [expenses,setExpenses] = React.useState([]);
+
+    const addExpense = () => {
+
+        if(title === "" || amount === "") return;
+
+        setExpenses([
+            ...expenses,
+            {
+                title,
+                amount:Number(amount)
+            }
+        ]);
+
+        setTitle("");
+        setAmount("");
+    };
+
+    const total = expenses.reduce(
+        (sum,item) => sum + item.amount, 0
+    );
+
+    return(
+        <div className="container">
+
+            <h1>💰 Expense Tracker</h1>
+
+            <input
+                type="text"
+                placeholder="Expense Name"
+                value={title}
+                onChange={(e)=>setTitle(e.target.value)}
+            />
+
+            <input
+                type="number"
+                placeholder="Amount"
+                value={amount}
+                onChange={(e)=>setAmount(e.target.value)}
+            />
+
+            <button onClick={addExpense}>
+                Add Expense
+            </button>
+
+            <div className="summary">
+                <h3>Total Expense</h3>
+                <div className="balance">₹ {total}</div>
+            </div>
+
+            <ul>
+                {
+                    expenses.map((item,index)=>(
+                        <li key={index}>
+                            <span>{item.title}</span>
+                            <span>₹ {item.amount}</span>
+                        </li>
+                    ))
+                }
+            </ul>
+
+        </div>
+    );
+}
+
+const root = ReactDOM.createRoot(
+    document.getElementById("root")
+);
+
+root.render(<ExpenseTracker />);
+
+</script>
+
+</body>
+</html>
