@@ -70,7 +70,11 @@ Demo code for Registration Form using Bootstrap Components:http://127.0.0.1:5500
 Demo code for Icons using Font Awesome:http://127.0.0.1:5500/fontawesome.html
 <img width="1874" height="912" alt="Screenshot (370)" src="https://github.com/user-attachments/assets/839c1d34-65f5-49ef-b01b-5e27129b76b7" />
 
+Demo code for React Portfolio Page Layout:http://127.0.0.1:5500/single%20pg%20layout.html
+<img width="1895" height="915" alt="Screenshot (386)" src="https://github.com/user-attachments/assets/819d8da6-f4f5-44b5-8de5-f811e04e38a5" />
 
+Demo code for Expense Tracker - React Counter Project:http://127.0.0.1:5500/expense%20react.html
+<img width="1891" height="909" alt="Screenshot (400)" src="https://github.com/user-attachments/assets/1f102794-4a65-45c5-8f5f-e9085f62075a" />
 
 
 
