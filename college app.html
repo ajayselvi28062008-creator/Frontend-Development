@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Arts & Science College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#ecfeff;
+        }
+
+        .hero{
+            background:linear-gradient(135deg,#0891b2,#06b6d4,#14b8a6);
+            color:white;
+            text-align:center;
+            padding:100px 20px 150px;
+            border-radius:0 0 60px 60px;
+        }
+
+        .hero h1{
+            font-size:65px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:22px;
+        }
+
+        .btn{
+            margin-top:25px;
+            padding:14px 35px;
+            border:none;
+            border-radius:30px;
+            background:white;
+            color:#0891b2;
+            font-size:17px;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            margin-top:-80px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:25px;
+            box-shadow:0 10px 25px rgba(0,0,0,.08);
+            transition:.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card h2{
+            color:#0891b2;
+            margin-bottom:15px;
+        }
+
+        .stats{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+            margin:60px 0;
+        }
+
+        .stat{
+            background:white;
+            width:200px;
+            padding:25px;
+            text-align:center;
+            border-radius:20px;
+            box-shadow:0 8px 20px rgba(0,0,0,.08);
+        }
+
+        .stat h1{
+            color:#14b8a6;
+            font-size:40px;
+        }
+
+        .courses{
+            width:90%;
+            margin:auto;
+            text-align:center;
+            padding-bottom:50px;
+        }
+
+        .courses h1{
+            color:#0891b2;
+            margin-bottom:30px;
+        }
+
+        .course-list{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .course{
+            background:#ccfbf1;
+            color:#0f766e;
+            padding:20px;
+            border-radius:15px;
+            font-weight:600;
+        }
+
+        footer{
+            background:#0f766e;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size:40px;
+            }
+
+            .hero p{
+                font-size:18px;
+            }
+
+            .stats{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🎓 Skyline Arts & Science College</h1>
+        <p>Building Bright Futures Through Quality Education</p>
+        <button class="btn">Apply Now</button>
+    </div>
+    
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <h2>📖 About College</h2>
+                <p>
+                    Skyline Arts & Science College is dedicated to academic
+                    excellence, creativity and student success.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>🌟 Vision</h2>
+                <p>
+                    To empower students with knowledge, values
+                    and leadership skills.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>🏆 Achievements</h2>
+                <p>
+                    Ranked among the top arts and science colleges
+                    with excellent academic results.
+                </p>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <h1>4000+</h1>
+                <p>Students</p>
+            </div>
+
+            <div class="stat">
+                <h1>200+</h1>
+                <p>Faculty</p>
+            </div>
+
+            <div class="stat">
+                <h1>35+</h1>
+                <p>Courses</p>
+            </div>
+
+            <div class="stat">
+                <h1>96%</h1>
+                <p>Success Rate</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="courses">
+        <h1>Popular Courses</h1>
+        
+        <div class="course-list">
+            <div class="course">B.Com</div>
+            <div class="course">BBA</div>
+            <div class="course">B.A English</div>
+            <div class="course">B.Sc Computer Science</div>
+            <div class="course">B.Sc Mathematics</div>
+            <div class="course">B.Sc Physics</div>
+        </div>
+    </div>
+    
+    <footer>
+        <h3>Skyline Arts & Science College</h3>
+        <p>📍 Chennai, Tamil Nadu</p>
+        <p>📧 info@skylinecollege.edu</p>
+    </footer>
+</body>
+</html>
